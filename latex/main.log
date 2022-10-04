@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.8.28) (preloaded format=pdflatex 2022.10.3)  4 OCT 2022 20:46
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.8.28) (preloaded format=pdflatex 2022.10.3)  4 OCT 2022 21:26
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -879,11 +879,7 @@ File: UTF8.chr 2021/10/16 4.8.5
 LaTeX Font Info:    Trying to load font information for T1+lmr on input line 25.
  (C:\Users\tadeo\AppData\Local\Programs\MiKTeX\tex/latex/lm\t1lmr.fd
 File: t1lmr.fd 2015/05/01 v1.6.1 Font defs for Latin Modern
-) (main.aux
-
-LaTeX Warning: Label `tab:chars' multiply defined.
-
-)
+) (main.aux)
 \openout1 = `main.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
@@ -1058,22 +1054,22 @@ File: ./images/rfc_conf1.png Graphic file (type png)
 Package pdftex.def Info: ./images/rfc_conf1.png  used on input line 98.
 (pdftex.def)             Requested size: 110.40253pt x 94.0262pt.
  [4]
-Overfull \hbox (0.49034pt too wide) in paragraph at lines 135--137
+Overfull \hbox (0.49034pt too wide) in paragraph at lines 136--138
 []\T1/lmr/m/n/10.53937 For the learn-ing rate the val-ues $\OML/lmm/m/it/10.53937 LR \OMS/lmsy/m/n/10.53937 2 f\OT1/lmr/m/n/10.53937 0\OML/lmm/m/it/10.53937 :\OT1/lmr/m/n/10.53937 01\OML/lmm/m/it/10.53937 ; \OT1/lmr/m/n/10.53937 0\OML/lmm/m/it/10.53937 :\OT1/lmr/m/n/10.53937 001\OML/lmm/m/it/10.53937 ; \OT1/lmr/m/n/10.53937 0\OML/lmm/m/it/10.53937 :\OT1/lmr/m/n/10.53937 0001\OML/lmm/m/it/10.53937 ; \OT1/lmr/m/n/10.53937 0\OML/lmm/m/it/10.53937 :\OT1/lmr/m/n/10.53937 00001\OML/lmm/m/it/10.53937 ; \OT1/lmr/m/n/10.53937 0\OML/lmm/m/it/10.53937 :\OT1/lmr/m/n/10.53937 000001\OMS/lmsy/m/n/10.53937 g$
  []
 
 
-Overfull \hbox (27.80618pt too wide) in paragraph at lines 135--137
+Overfull \hbox (27.80618pt too wide) in paragraph at lines 136--138
 \T1/lmr/m/n/10.53937 are con-sid-ered while hold-ing other val-ues con-stant ($\OML/lmm/m/it/10.53937 d \OT1/lmr/m/n/10.53937 = 4\OML/lmm/m/it/10.53937 ; k \OT1/lmr/m/n/10.53937 = 8\OML/lmm/m/it/10.53937 ; BATCHSIZE \OT1/lmr/m/n/10.53937 =
  []
 
 [5 <./images/reg_conf1.png> <./images/svm_conf1.png> <./images/rfc_conf1.png>]
-Overfull \hbox (38.3617pt too wide) in paragraph at lines 143--152
+Overfull \hbox (38.3617pt too wide) in paragraph at lines 144--153
  [][] 
  []
 
 
-Overfull \hbox (26.94086pt too wide) in paragraph at lines 162--171
+Overfull \hbox (26.94086pt too wide) in paragraph at lines 163--172
  [][] 
  []
 
@@ -1081,126 +1077,106 @@ Overfull \hbox (26.94086pt too wide) in paragraph at lines 162--171
 <./images/net(d4_k8)_E50_LR0.0001_B64/accuracy.png, id=47, 406.1574pt x 262.8219pt>
 File: ./images/net(d4_k8)_E50_LR0.0001_B64/accuracy.png Graphic file (type png)
 <use ./images/net(d4_k8)_E50_LR0.0001_B64/accuracy.png>
-Package pdftex.def Info: ./images/net(d4_k8)_E50_LR0.0001_B64/accuracy.png  used on input line 211.
+Package pdftex.def Info: ./images/net(d4_k8)_E50_LR0.0001_B64/accuracy.png  used on input line 212.
 (pdftex.def)             Requested size: 165.59853pt x 107.15611pt.
 <./images/net(d4_k8)_E50_LR0.0001_B64/loss.png, id=48, 399.894pt x 262.8219pt>
 File: ./images/net(d4_k8)_E50_LR0.0001_B64/loss.png Graphic file (type png)
 <use ./images/net(d4_k8)_E50_LR0.0001_B64/loss.png>
-Package pdftex.def Info: ./images/net(d4_k8)_E50_LR0.0001_B64/loss.png  used on input line 216.
+Package pdftex.def Info: ./images/net(d4_k8)_E50_LR0.0001_B64/loss.png  used on input line 217.
 (pdftex.def)             Requested size: 165.59853pt x 108.83644pt.
 <./images/net(d4_k8)_E50_LR0.0001_B64/conf_train.png, id=49, 326.4195pt x 277.9986pt>
 File: ./images/net(d4_k8)_E50_LR0.0001_B64/conf_train.png Graphic file (type png)
 <use ./images/net(d4_k8)_E50_LR0.0001_B64/conf_train.png>
-Package pdftex.def Info: ./images/net(d4_k8)_E50_LR0.0001_B64/conf_train.png  used on input line 228.
+Package pdftex.def Info: ./images/net(d4_k8)_E50_LR0.0001_B64/conf_train.png  used on input line 229.
 (pdftex.def)             Requested size: 165.59853pt x 141.03506pt.
 <./images/net(d4_k8)_E50_LR0.0001_B64/conf_test.png, id=50, 326.4195pt x 277.9986pt>
 File: ./images/net(d4_k8)_E50_LR0.0001_B64/conf_test.png Graphic file (type png)
 <use ./images/net(d4_k8)_E50_LR0.0001_B64/conf_test.png>
-Package pdftex.def Info: ./images/net(d4_k8)_E50_LR0.0001_B64/conf_test.png  used on input line 233.
+Package pdftex.def Info: ./images/net(d4_k8)_E50_LR0.0001_B64/conf_test.png  used on input line 234.
 (pdftex.def)             Requested size: 165.59853pt x 141.03506pt.
 <./images/net(d4_k8)_E50_LR0.0001_B64/roc.png, id=51, 387.1263pt x 262.8219pt>
 File: ./images/net(d4_k8)_E50_LR0.0001_B64/roc.png Graphic file (type png)
 <use ./images/net(d4_k8)_E50_LR0.0001_B64/roc.png>
-Package pdftex.def Info: ./images/net(d4_k8)_E50_LR0.0001_B64/roc.png  used on input line 248.
+Package pdftex.def Info: ./images/net(d4_k8)_E50_LR0.0001_B64/roc.png  used on input line 249.
 (pdftex.def)             Requested size: 165.59853pt x 112.42569pt.
 <./images/net(d4_k8)_E50_LR0.0001_B64/prc.png, id=52, 387.1263pt x 262.8219pt>
 File: ./images/net(d4_k8)_E50_LR0.0001_B64/prc.png Graphic file (type png)
 <use ./images/net(d4_k8)_E50_LR0.0001_B64/prc.png>
-Package pdftex.def Info: ./images/net(d4_k8)_E50_LR0.0001_B64/prc.png  used on input line 254.
+Package pdftex.def Info: ./images/net(d4_k8)_E50_LR0.0001_B64/prc.png  used on input line 255.
 (pdftex.def)             Requested size: 165.59853pt x 112.42569pt.
 <./images/reg_roc.png, id=53, 387.1263pt x 262.8219pt>
 File: ./images/reg_roc.png Graphic file (type png)
 <use ./images/reg_roc.png>
-Package pdftex.def Info: ./images/reg_roc.png  used on input line 260.
+Package pdftex.def Info: ./images/reg_roc.png  used on input line 261.
 (pdftex.def)             Requested size: 165.59853pt x 112.42569pt.
 <./images/reg_prc.png, id=54, 387.1263pt x 262.8219pt>
 File: ./images/reg_prc.png Graphic file (type png)
 <use ./images/reg_prc.png>
-Package pdftex.def Info: ./images/reg_prc.png  used on input line 266.
+Package pdftex.def Info: ./images/reg_prc.png  used on input line 267.
 (pdftex.def)             Requested size: 165.59853pt x 112.42569pt.
 <./images/svm_roc.png, id=55, 387.1263pt x 262.8219pt>
 File: ./images/svm_roc.png Graphic file (type png)
 <use ./images/svm_roc.png>
-Package pdftex.def Info: ./images/svm_roc.png  used on input line 272.
+Package pdftex.def Info: ./images/svm_roc.png  used on input line 273.
 (pdftex.def)             Requested size: 165.59853pt x 112.42569pt.
 <./images/svm_prc.png, id=56, 387.1263pt x 262.8219pt>
 File: ./images/svm_prc.png Graphic file (type png)
 <use ./images/svm_prc.png>
-Package pdftex.def Info: ./images/svm_prc.png  used on input line 278.
+Package pdftex.def Info: ./images/svm_prc.png  used on input line 279.
 (pdftex.def)             Requested size: 165.59853pt x 112.42569pt.
 <./images/rfc_roc.png, id=57, 387.1263pt x 262.8219pt>
 File: ./images/rfc_roc.png Graphic file (type png)
 <use ./images/rfc_roc.png>
-Package pdftex.def Info: ./images/rfc_roc.png  used on input line 284.
+Package pdftex.def Info: ./images/rfc_roc.png  used on input line 285.
 (pdftex.def)             Requested size: 165.59853pt x 112.42569pt.
 <./images/rfc_prc.png, id=58, 387.1263pt x 262.8219pt>
 File: ./images/rfc_prc.png Graphic file (type png)
 <use ./images/rfc_prc.png>
-Package pdftex.def Info: ./images/rfc_prc.png  used on input line 290.
+Package pdftex.def Info: ./images/rfc_prc.png  used on input line 291.
 (pdftex.def)             Requested size: 165.59853pt x 112.42569pt.
 
 
-LaTeX Warning: Float too large for page by 25.23332pt on input line 296.
+LaTeX Warning: Float too large for page by 25.23332pt on input line 297.
 
 [7 <./images/net(d4_k8)_E50_LR0.0001_B64/accuracy.png> <./images/net(d4_k8)_E50_LR0.0001_B64/loss.png>] [8 <./images/net(d4_k8)_E50_LR0.0001_B64/conf_train.png> <./images/net(d4_k8)_E50_LR0.0001_B64/conf_test.png>]
 <./images/undersampled_net(d4_k8)_E2000_LR0.0001_B32/conf_test.png, id=69, 326.4195pt x 277.9986pt>
 File: ./images/undersampled_net(d4_k8)_E2000_LR0.0001_B32/conf_test.png Graphic file (type png)
 <use ./images/undersampled_net(d4_k8)_E2000_LR0.0001_B32/conf_test.png>
-Package pdftex.def Info: ./images/undersampled_net(d4_k8)_E2000_LR0.0001_B32/conf_test.png  used on input line 311.
+Package pdftex.def Info: ./images/undersampled_net(d4_k8)_E2000_LR0.0001_B32/conf_test.png  used on input line 312.
 (pdftex.def)             Requested size: 165.59853pt x 141.03506pt.
 <./images/reg_conf1_u.png, id=70, 326.4195pt x 277.9986pt>
 File: ./images/reg_conf1_u.png Graphic file (type png)
 <use ./images/reg_conf1_u.png>
-Package pdftex.def Info: ./images/reg_conf1_u.png  used on input line 317.
+Package pdftex.def Info: ./images/reg_conf1_u.png  used on input line 318.
 (pdftex.def)             Requested size: 165.59853pt x 141.03506pt.
 <./images/svm_conf1_u.png, id=71, 326.4195pt x 277.9986pt>
 File: ./images/svm_conf1_u.png Graphic file (type png)
 <use ./images/svm_conf1_u.png>
-Package pdftex.def Info: ./images/svm_conf1_u.png  used on input line 323.
+Package pdftex.def Info: ./images/svm_conf1_u.png  used on input line 324.
 (pdftex.def)             Requested size: 165.59853pt x 141.03506pt.
 <./images/rfc_conf1_u.png, id=72, 326.4195pt x 277.9986pt>
 File: ./images/rfc_conf1_u.png Graphic file (type png)
 <use ./images/rfc_conf1_u.png>
-Package pdftex.def Info: ./images/rfc_conf1_u.png  used on input line 329.
+Package pdftex.def Info: ./images/rfc_conf1_u.png  used on input line 330.
 (pdftex.def)             Requested size: 165.59853pt x 141.03506pt.
 
-
-LaTeX Warning: Reference `tab:undersampling' on page 9 undefined on input line 337.
-
-
-Overfull \hbox (40.6271pt too wide) in paragraph at lines 345--353
+Overfull \hbox (14.27869pt too wide) in paragraph at lines 345--353
  [][] 
  []
 
-
-Overfull \hbox (28.00572pt too wide) in paragraph at lines 354--359
-[]\T1/lmr/m/n/10.53937 Logistic Re-gres-sion: Ac-cu-racy: 0.9765 Pre-ci-sion: 0.073705179 Re-call: 0.880952381
- []
-
-[9] [10] (main.bbl
-
-Package natbib Warning: Empty `thebibliography' environment on input line 8.
-
-) [11] [12 <./images/net(d4_k8)_E50_LR0.0001_B64/roc.png> <./images/net(d4_k8)_E50_LR0.0001_B64/prc.png> <./images/reg_roc.png> <./images/reg_prc.png> <./images/svm_roc.png> <./images/svm_prc.png> <./images/rfc_roc.png> <./images/rfc_prc.png>] [13 <./images/undersampled_net(d4_k8)_E2000_LR0.0001_B32/conf_test.png> <./images/reg_conf1_u.png> <./images/svm_conf1_u.png> <./images/rfc_conf1_u.png>] (main.aux)
-
-LaTeX Warning: There were undefined references.
-
-
-LaTeX Warning: There were multiply-defined labels.
-
- ) 
+[9] [10] [11 <./images/net(d4_k8)_E50_LR0.0001_B64/roc.png> <./images/net(d4_k8)_E50_LR0.0001_B64/prc.png> <./images/reg_roc.png> <./images/reg_prc.png> <./images/svm_roc.png> <./images/svm_prc.png> <./images/rfc_roc.png> <./images/rfc_prc.png>] [12 <./images/undersampled_net(d4_k8)_E2000_LR0.0001_B32/conf_test.png> <./images/reg_conf1_u.png> <./images/svm_conf1_u.png> <./images/rfc_conf1_u.png>] (main.aux) ) 
 Here is how much of TeX's memory you used:
- 11483 strings out of 475389
- 219128 string characters out of 2777000
- 555734 words of memory out of 3000000
- 32543 multiletter control sequences out of 15000+600000
+ 11477 strings out of 475389
+ 219015 string characters out of 2777000
+ 555703 words of memory out of 3000000
+ 32540 multiletter control sequences out of 15000+600000
  523483 words of font info for 65 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  84i,8n,90p,1418b,546s stack positions out of 10000i,1000n,20000p,200000b,80000s
 {C:/Users/tadeo/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}{C:/Users/tadeo/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Users/tadeo/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Users/tadeo/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}<C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/Users/tadeo/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/tadeo/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/tadeo/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmcsc10.pfb><C:/Users/tadeo/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/tadeo/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi7.pfb><C:/Users/tadeo/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/tadeo/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/tadeo/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr17.pfb><C:/Users/tadeo/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr7.pfb><C:/Users/tadeo/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr9.pfb><C:/Users/tadeo/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmro10.pfb><C:/Users/tadeo/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb>
-Output written on main.pdf (14 pages, 1220294 bytes).
+Output written on main.pdf (13 pages, 1221751 bytes).
 PDF statistics:
- 164 PDF objects out of 1000 (max. 8388607)
+ 161 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  104 words of extra memory for PDF output out of 10000 (max. 10000000)
 

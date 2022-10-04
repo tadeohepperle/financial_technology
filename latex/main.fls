@@ -905,10 +905,6 @@ INPUT .\images\rfc_conf1_u.png
 INPUT .\images\rfc_conf1_u.png
 INPUT .\images\rfc_conf1_u.png
 INPUT .\images\rfc_conf1_u.png
-INPUT .\main.bbl
-INPUT main.bbl
-INPUT .\main.bbl
-INPUT main.bbl
 INPUT main.aux
 INPUT C:\Users\tadeo\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\lm\lm-ec.enc
 INPUT C:\Users\tadeo\AppData\Local\Programs\MiKTeX\fonts\enc\dvips\lm\lm-mathit.enc

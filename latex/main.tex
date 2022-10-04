@@ -35,7 +35,7 @@
   {\Large Lecturer:\\
     Che Lin (林澤) \par}
   \vspace{1cm}
-  {\Large Author: Tadeo Hepperle \par}
+  {\Large Author: Tadeo Hepperle, Student ID: A11922105 \par}
   \vfill
   {\large \today\par}
 \end{titlepage}
@@ -114,6 +114,7 @@ Taking a look at the classification metrics in Table~\ref{tab:metrics1} we can s
     Random Forest Classifier & 0.9987   & 0.7027    & 0.6190 & 0.6582   \\
   \end{tabular}
 \end{table}
+
 
 \subsection{Constructing the Deep Neural Network}
 
@@ -334,53 +335,30 @@ Figure~\ref{fig:u_comp} aims to compare the test-set performance of the 4 models
   \label{fig:u_comp}
 \end{figure}
 
-At first we can see that a lot more items get misclassified than without undersampling. This can be partly because the train set was massively reduced in size and does not contain so much information to learn from anymore. Especially there are much more False-Positives now. Let's take a look at the actual performance values in Table~\ref{tab:undersampling}
-
-
+At first we can see that a lot more items get misclassified than without undersampling. This can be partly because the train set was massively reduced in size and does not contain so much information to learn from anymore. Especially there are much more False-Positives now. Let's take a look at the actual performance values in Table~\ref{tab:undersampling}. Looking at the F1 score, we can see that all models perform worse than before. The Random Forest Classifier seems to have the least trouble though. However, it is not clear if the performance is really worse. Looking at the Recall, we can see that
+all models have improvemed at the cost of precision. For detecting credit card fraud it is probably much more important to catch all true positives (fraud cases) even at the cost of some false alarms (false positives). So it depends on the application if the undersampling makes for better or worse classifiers. The deep neural network can deal with the data now much better than Logistic Regression and the Support Vector Machine and is on second place in terms of the F1-score.
 
 \begin{table}[ht]
   \centering
-  \caption{Performance of the strongest model}
-  \label{tab:chars}
+  \caption{Performance on test set using an undersampled train set}
+  \label{tab:undersampling}
   \begin{tabular}{c|cccc}
-    characteristic           & Accuracy & Precision   & Recall      & F1          \\
+    characteristic           & Accuracy & Precision   & Recall & F1          \\
     \hline
-    Deep Neural Network      & 0.9364   & 0.9915      & 0.1768      & 0.8333      \\
-    Logistic Regression      & 0.9765   & 0.0737      & 0.8810      & 0.1360      \\
-    Support Vector Machine   & 0.98175  & 0.091139241 & 0.857142857 & 0.164759725 \\
-    Random Forest Classifier & 0.9977   & 0.473684211 & 0.857142857 & 0.610169492 \\
+    Deep Neural Network      & 0.9915   & 0.1791      & 0.8571 & 0.2963      \\
+    Logistic Regression      & 0.9765   & 0.0737      & 0.8810 & 0.1360      \\
+    Support Vector Machine   & 0.98175  & 0.091139241 & 0.8571 & 0.164759725 \\
+    Random Forest Classifier & 0.9977   & 0.473684211 & 0.8571 & 0.610169492 \\
   \end{tabular}
 \end{table}
-Logistic Regression:
-Accuracy: 0.9765
-Precision: 0.073705179
-Recall: 0.880952381
-F1: 0.136029412
-
-Support Vector Machine:
-Accuracy: 0.98175
-Precision: 0.091139241
-Recall: 0.857142857
-F1: 0.164759725
-
-Random Forest Classifier:
-Accuracy: 0.9977
-Precision: 0.473684211
-Recall: 0.857142857
-F1: 0.610169492
-
-
-
-
-
-
 
 
 \section{Other ideas for the unbalanced data problem}
 
 Since out of our 99999 objects in the dataset only 223 represent fraud, we need to deal with the unbalanced data in a smart way.
 We can use under- or oversampling. However there are also other approaches.
-\subsection{Clustering}
+
+\subsection{Clustering the Majority Class}
 Instead of using undersampling, we could also cluster the majority class objects into $n$ clusters, where $n$ is the number of objects in the minority class and use the resulting cluster centers as "examples" for the majority class in training. This way we have a balanced and relatively small dataset but still capture some information from each object from the original data, since each object has some influence on the resulting cluster centers.
 
 \subsection{Stronger Weights for Minority Class}
@@ -388,12 +366,13 @@ Instead of using undersampling, we could also cluster the majority class objects
 since there are so few fraud cases, it is easy for a machine learning algorithm to simple oversee them, and not recognize their influence. To avoid this, we could give a greater punishment to the misclassification of fraud cases and in this way force the model to consider them more strongly. We could do this by having an asymmetric loss function, which is steeper in the area where the fraud class would be misclassified.
 
 
+\section{Discussion}
 
-\subsection{Summary}
+In total it was surprising that the deep neural network did not outperform the other methods. This could be in part due to not enough information, because the set of fraud cases was so small. Also maybe the wrong architecture or parameters were chosen, but I did my best to try many different values when choosing the best model.
 
-\newpage
-\addcontentsline{toc}{section}{Bibliography}
-\renewcommand\refname{Bibliography}
-\bibliographystyle{plainnat}
-\bibliography{references}
+% \newpage
+% \addcontentsline{toc}{section}{Bibliography}
+% \renewcommand\refname{Bibliography}
+% \bibliographystyle{plainnat}
+% \bibliography{references}
 \end{document}

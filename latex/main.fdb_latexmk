@@ -1,12 +1,5 @@
 # Fdb version 3
-["bibtex main"] 1664887605 "main.aux" "main.bbl" "main" 1664887611
-  "C:/Users/tadeo/AppData/Local/Programs/MiKTeX/bibtex/bst/natbib/plainnat.bst" 1284455456 26816 ffe5423d2019860bad9f54bc402fac15 ""
-  "main.aux" 1664887610 5941 182b1e72d04a16e3d7ee0fcf3422ddb9 "pdflatex"
-  "references.bib" 1664803400 3446 daae140690ab038e1e1a3f51e09096be ""
-  (generated)
-  "main.bbl"
-  "main.blg"
-["pdflatex"] 1664887605 "d:/code/financial_technology/project1_credit_card_fraud/latex/main.tex" "main.pdf" "main" 1664887611
+["pdflatex"] 1664889966 "d:/code/financial_technology/project1_credit_card_fraud/latex/main.tex" "main.pdf" "main" 1664889971
   "C:/Users/tadeo/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1664808129 81068 299f700eb05b1217173e62b88b513bd0 ""
   "C:/Users/tadeo/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1664807782 10786909 464752c0e5582881d7d8f2db8526db51 ""
   "C:/Users/tadeo/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc" 1256929440 2375 baa924870cfb487815765f9094cf3728 ""
@@ -152,7 +145,7 @@
   "C:/Users/tadeo/AppData/Local/Programs/MiKTeX/tex/latex/zhnumber/zhnumber.sty" 1657817710 38160 aafa8d740e4f21b62a4acd4835e54359 ""
   "C:/WINDOWS/Fonts/msyh.ttc" 1622894706 19647736 ff2e53a6131130a07589812ea5b5b0d0 ""
   "C:/WINDOWS/Fonts/simsun.ttc" 1622894706 17909384 a31f28cad247ad739adf0891b0f2f7f2 ""
-  "d:/code/financial_technology/project1_credit_card_fraud/latex/main.tex" 1664887598 21100 05db50221a874a2d8f5e52d0e935603c ""
+  "d:/code/financial_technology/project1_credit_card_fraud/latex/main.tex" 1664889965 21886 a62dc8a857fbb7a4e9a5acc96b7be34a ""
   "images/net(d4_k8)_E50_LR0.0001_B64/accuracy.png" 1664871253 83104 9c9438a94a8ec61968049a3b0ca61c5b ""
   "images/net(d4_k8)_E50_LR0.0001_B64/conf_test.png" 1664871254 51332 8414f9ebdccc23353d4b4e7750412333 ""
   "images/net(d4_k8)_E50_LR0.0001_B64/conf_train.png" 1664871253 51264 c26774457c45932c672d582c66891415 ""
@@ -171,11 +164,10 @@
   "images/svm_conf1_u.png" 1664881034 61335 1d435a504ba7efab2d01256f662bb90c ""
   "images/svm_prc.png" 1664879504 46700 cee7e019eec6db80af08fbc25c66bc89 ""
   "images/svm_roc.png" 1664879504 45951 9b914b052ffafd211c62ae7bae10b0a6 ""
-  "images/undersampled_net(d4_k8)_E2000_LR0.0001_B32/conf_test.png" 1664881364 53193 b022ea1af458e83ca3c7cb064cffdf2d ""
-  "main.aux" 1664887610 5941 182b1e72d04a16e3d7ee0fcf3422ddb9 "pdflatex"
-  "main.bbl" 1664887605 283 de5ffaf5b665b622658d80bed97ba2a5 "bibtex main"
-  "main.tex" 1664887598 21100 05db50221a874a2d8f5e52d0e935603c ""
-  "main.toc" 1664887610 1354 968a35ed21bccb091085db8bc9c7001d "pdflatex"
+  "images/undersampled_net(d4_k8)_E2000_LR0.0001_B32/conf_test.png" 1664888633 53960 37bdedcf29b774f09623ab1518569518 ""
+  "main.aux" 1664889971 5861 5b8494ac9feb66fc053fc9913f07451b "pdflatex"
+  "main.tex" 1664889965 21886 a62dc8a857fbb7a4e9a5acc96b7be34a ""
+  "main.toc" 1664889971 1327 e4f9f5830b5c9033690783e12ee961c3 "pdflatex"
   (generated)
   "main.aux"
   "main.log"
