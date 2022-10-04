@@ -119,13 +119,22 @@ Taking a look at the classification metrics in Table~\ref{tab:metrics1} we can s
 
 Secondly we construct a deep neural network and compare it to the methods previously presented.
 The network has an input layer with 30 nodes, one for each feature. Then there are $d$ fully connected hidden layers, each consisting of $k$ neurons. A ReLU layer is put in between each two neighboring hidden layers. In the end, there is one output node, to which a sigmoid function is applied, to convert scores to probabilities. If the output is greater or equal to 0.5 we classify a case as fraud, otherwise as non-fraud.
+The model is trained using the ADAM Optimizer, reducing the binary cross entropy loss function. The training uses mini-batch gradient descent.
 There are some parameters that we need to set in advance:
 \begin{enumerate}
   \item The number of hidden layers $d$.
   \item The number of nodes in each hidden layer $k$.
-  \item The learning rate $LR$
-  \item The batch size $b$
+  \item The learning rate $LR$.
+  \item The $BATCH SIZE$, of batches used in the gradient descent.
+  \item number of $EPOCHS$ (how many times to go over the entire dataset before stopping training)
 \end{enumerate}
+To perform a full grid search over all of these parameters would be very costly and take too much time, so we will try to figure out good paramters individually.
+
+\subsubsection{Learning Rate}
+
+For the learning rate the values $LR \in \{0.001, 0.0001, 0.00003,0.00001, 0.000003\}$are considered while holding other values constant ($d=4,k=8, BATCH SIZE=64, EPOCHS=50$).
+The following graphs show the results  for the resulting confusion matrices on the test data after 50 epochs of training:
+
 
 
 

@@ -1,12 +1,12 @@
 # Fdb version 3
-["bibtex main"] 1664855889 "main.aux" "main.bbl" "main" 1664856216
+["bibtex main"] 1664860602 "main.aux" "main.bbl" "main" 1664860605
   "C:/Users/tadeo/AppData/Local/Programs/MiKTeX/bibtex/bst/natbib/plainnat.bst" 1284455456 26816 ffe5423d2019860bad9f54bc402fac15 ""
-  "main.aux" 1664856215 2305 dd8868c965abc52cd240a629366c7949 "pdflatex"
+  "main.aux" 1664860604 2416 446a499cebb878a8c22c8b3dbab2aa59 "pdflatex"
   "references.bib" 1664803400 3446 daae140690ab038e1e1a3f51e09096be ""
   (generated)
   "main.bbl"
   "main.blg"
-["pdflatex"] 1664856213 "d:/code/financial_technology/project1_credit_card_fraud/latex/main.tex" "main.pdf" "main" 1664856216
+["pdflatex"] 1664860602 "d:/code/financial_technology/project1_credit_card_fraud/latex/main.tex" "main.pdf" "main" 1664860605
   "C:/Users/tadeo/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map" 1664808129 81068 299f700eb05b1217173e62b88b513bd0 ""
   "C:/Users/tadeo/AppData/Local/MiKTeX/miktex/data/le/pdftex/pdflatex.fmt" 1664807782 10786909 464752c0e5582881d7d8f2db8526db51 ""
   "C:/Users/tadeo/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc" 1256929440 2375 baa924870cfb487815765f9094cf3728 ""
@@ -150,14 +150,14 @@
   "C:/Users/tadeo/AppData/Local/Programs/MiKTeX/tex/latex/zhnumber/zhnumber.sty" 1657817710 38160 aafa8d740e4f21b62a4acd4835e54359 ""
   "C:/WINDOWS/Fonts/msyh.ttc" 1622894706 19647736 ff2e53a6131130a07589812ea5b5b0d0 ""
   "C:/WINDOWS/Fonts/simsun.ttc" 1622894706 17909384 a31f28cad247ad739adf0891b0f2f7f2 ""
-  "d:/code/financial_technology/project1_credit_card_fraud/latex/main.tex" 1664856212 8490 a3523772b3cb619a38680286982eb80e ""
+  "d:/code/financial_technology/project1_credit_card_fraud/latex/main.tex" 1664860597 9275 920bf1f95e8b95cebdf7d2ac9ae535a4 ""
   "images/reg_conf1.png" 1664853309 51492 e986b811b481ca02eeca375436da6235 ""
   "images/rfc_conf1.png" 1664853316 53587 1bc4c1a198421cc96348546f0488d0b1 ""
   "images/svm_conf1.png" 1664853315 53441 0aa7b1e8f0c5658da7678a6969f5e208 ""
-  "main.aux" 1664856215 2305 dd8868c965abc52cd240a629366c7949 "pdflatex"
-  "main.bbl" 1664855889 283 de5ffaf5b665b622658d80bed97ba2a5 "bibtex main"
-  "main.tex" 1664856212 8490 a3523772b3cb619a38680286982eb80e ""
-  "main.toc" 1664856215 815 f68bf04a10b56a4c2c196fdb5155bfd4 "pdflatex"
+  "main.aux" 1664860604 2416 446a499cebb878a8c22c8b3dbab2aa59 "pdflatex"
+  "main.bbl" 1664860602 283 de5ffaf5b665b622658d80bed97ba2a5 "bibtex main"
+  "main.tex" 1664860597 9275 920bf1f95e8b95cebdf7d2ac9ae535a4 ""
+  "main.toc" 1664860604 885 96c0a486ef5e97456ac1de2c6dd230e1 "pdflatex"
   (generated)
   "main.aux"
   "main.log"
