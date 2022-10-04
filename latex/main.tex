@@ -79,7 +79,7 @@ With an 80-20 train-test split of the data, 3 models were trained: Logistic Regr
 
 \subsection{Confusion Matrices and Classification Metrics}
 As Figure~\ref{fig:confusion1} shows, all models are pretty good at classifying the non-fraud cases as non-fraud, which is non-surprising since these comprise the overwhelming majority of the training data.
-Taking a look at the classification metrics in Table~\ref{tab:metrics1} we can see that the SVM is overall performing best, also with highest accuracy. To judge the performance, I would use the F1-score as it provides a good middle ground between precision and recall, in both of which high values are desired. I think the F1 metric is most suitable on this dataset because it is not so much affected by the very imbalanced distribution of fraud vs. non-fraud cases in the data.
+Taking a look at the classification metrics in Table~\ref{tab:metrics1} we can see that the SVM is overall performing best, also with highest accuracy. To judge the performance, I would use the F1-score as it provides a good middle ground between precision and recall, in both of which high values are desired. I think the F1 metric is most suitable on this dataset because it is not so much affected by the very imbalanced distribution of fraud vs. non-fraud cases in the data. Surprisingly Logistic Regression and Random Forest have the same performance in our case.
 
 \begin{figure}[htb]
   \centering
@@ -109,13 +109,13 @@ Taking a look at the classification metrics in Table~\ref{tab:metrics1} we can s
   \begin{tabular}{c|cccc}
     Model                    & Accuracy & Precision & Recall & F1-Score \\
     \hline
-    Logistic Regression      & 0.9989   & 0.8000    & 0.6957 & 0.7442   \\
-    Support Vector Machine   & 0.9994   & 1.000     & 0.7609 & 0.8642   \\
-    Random Forest Classifier & 0.9991   & 0.8043    & 0.8043 & 0.8043   \\
+    Logistic Regression      & 0.9987   & 0.7027    & 0.6190 & 0.6582   \\
+    Support Vector Machine   & 0.9994   & 0.9688    & 0.7381 & 0.8378   \\
+    Random Forest Classifier & 0.9987   & 0.7027    & 0.6190 & 0.6582   \\
   \end{tabular}
 \end{table}
 
-\subsection{Constructing a Deep Neural Network}
+\subsection{Constructing the Deep Neural Network}
 
 Secondly we construct a deep neural network and compare it to the methods previously presented.
 The network has an input layer with 30 nodes, one for each feature. Then there are $d$ fully connected hidden layers, each consisting of $k$ neurons. A ReLU layer is put in between each two neighboring hidden layers. In the end, there is one output node, to which a sigmoid function is applied, to convert scores to probabilities. If the output is greater or equal to 0.5 we classify a case as fraud, otherwise as non-fraud.
@@ -128,13 +128,185 @@ There are some parameters that we need to set in advance:
   \item The $BATCH SIZE$, of batches used in the gradient descent.
   \item number of $EPOCHS$ (how many times to go over the entire dataset before stopping training)
 \end{enumerate}
-To perform a full grid search over all of these parameters would be very costly and take too much time, so we will try to figure out good paramters individually.
+To perform a full grid search over all of these parameters would be very costly and take too much time, so we will try to figure out good parameters individually.
 
 \subsubsection{Learning Rate}
 
-For the learning rate the values $LR \in \{0.001, 0.0001, 0.00003,0.00001, 0.000003\}$are considered while holding other values constant ($d=4,k=8, BATCH SIZE=64, EPOCHS=50$).
-The following graphs show the results  for the resulting confusion matrices on the test data after 50 epochs of training:
+For the learning rate the values $LR \in \{0.01, 0.001, 0.0001, 0.00001, 0.000001\}$ are considered while holding other values constant ($d=4,k=8, BATCH SIZE=64, EPOCHS=50$).
+Table~\ref{tab:lrcomparison} shows the results for the resulting confusion matrices on the test data after 50 epochs of training. It seems like a learning rate of 0.0001 is best. The others mostly just classified the entire dataset as non-fraud.
 
+\begin{table}[ht]
+  \centering
+  \caption{Performance for different Learning Rates on the test set}
+  \label{tab:lrcomparison}
+
+  \begin{tabular}{c|cccccccccc}
+    LR       & TN    & TP & FP & FN & accuracy & F1     & loss (train) & loss (test) \\
+    \hline
+    0.01     & 19958 & 0  & 0  & 42 & 0.9979   & 0      & 0.2263       & 0.2100      \\
+    0.001    & 19958 & 0  & 0  & 42 & 0.9979   & 0      & 0.2263       & 0.2060      \\
+    0.0001   & 19946 & 25 & 12 & 17 & 0.9986   & 0.6329 & 0.0062       & 0.0051      \\
+    0.00001  & 19946 & 0  & 0  & 42 & 0.9979   & 0      & 0.0121       & 0.0107      \\
+    0.000001 & 19948 & 0  & 10 & 42 & 0.9974   & 0      & 0.5478       & 0.5474      \\
+  \end{tabular}
+
+\end{table}
+
+Next we will take a look at the influence of the size and amount of hidden layers: In the following Table~\ref{tab:sizecomparison} you can see the training outcomes for different configurations, keeping other values constant ($BATCH SIZE=64, EPOCHS=50, LR=0.0001$). The configurations $(d,k)$ = (hidden layer count, nodes per hidden layer) are set to $(1,8)$, $(1,16)$, $(4,8)$, $(4,16)$ and $(8,8)$. Surprisingly having 4 hidden layers with 8 nodes each seems to be the best configuration.
+
+
+\begin{table}[ht]
+  \centering
+  \caption{Performance for different Learning Rates on the test set}
+  \label{tab:sizecomparison}
+  \begin{tabular}{cc|cccccccc}
+    d & k  & TN    & TP & FP & FN & accuracy & F1     & loss (train) & loss (test) \\
+    \hline
+    1 & 8  & 19958 & 0  & 0  & 42 & 0.9979   & 0      & 0.2252       & 0.2057      \\
+    1 & 16 & 19954 & 0  & 0  & 46 & 0.9979   & 0      & 0.2216       & 0.2300      \\
+    4 & 8  & 19946 & 25 & 12 & 17 & 0.9986   & 0.6329 & 0.0062       & 0.0051      \\
+    4 & 16 & 19947 & 20 & 11 & 22 & 0.99835  & 0.5479 & 0.008        & 0.0065      \\
+    8 & 8  & 19950 & 9  & 8  & 33 & 0.9974   & 0.3051 & 0.0115       & 0.0103      \\
+  \end{tabular}
+\end{table}
+
+For the rest of this report we will consider a network with the following parameters:
+\begin{enumerate}
+  \item The number of hidden layer $d = 4$.
+  \item The number of nodes in each hidden layer $k = 8$.
+  \item $LR = 0.0001$.
+  \item $BATCH SIZE = 64$
+  \item $EPOCHS = 50$
+\end{enumerate}
+
+\subsection{Characteristics of the DNN}
+
+Table~\ref{tab:chars} shows some characteristics of the deep neural network that was deemed best during the hyper parameter selection process:
+
+\begin{table}[ht]
+  \centering
+  \caption{Performance of the strongest model}
+  \label{tab:chars}
+  \begin{tabular}{c|cc}
+    characteristic & train  & test   \\
+    \hline
+    TN             & 79790  & 19946  \\
+    TP             & 114    & 25     \\
+    FP             & 28     & 12     \\
+    FN             & 67     & 17     \\
+    Accuracy       & 0.9988 & 0.9986 \\
+    Precision      & 0.8028 & 0.6757 \\
+    Recall         & 0.6298 & 0.5952 \\
+    F1             & 0.7058 & 0.6329 \\
+    Loss           & 0.0062 & 0.0051 \\
+  \end{tabular}
+\end{table}
+
+Figure~\ref{fig:accuracy_and_loss} shows how accuracy and loss devoloped throughout the training period for both the train and test dataset. Figure~\ref{fig:confusion_matrices} shows the confusion matrices on the train and test datasets after the model was trained for 50 epochs.
+
+\begin{figure}[htb]
+  \centering
+  \begin{subfigure}[b]{0.48\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{./images/net(d4_k8)_E50_LR0.0001_B64/accuracy.png}
+    \label{fig:accuracy}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.48\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{./images/net(d4_k8)_E50_LR0.0001_B64/loss.png}
+    \label{fig:loss}
+  \end{subfigure}
+  \caption{Accuracy and Loss over the training period}
+  \label{fig:accuracy_and_loss}
+\end{figure}
+
+
+\begin{figure}[htb]
+  \centering
+  \begin{subfigure}[b]{0.48\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{./images/net(d4_k8)_E50_LR0.0001_B64/conf_train.png}
+    \label{fig:confusion_train}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.48\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{./images/net(d4_k8)_E50_LR0.0001_B64/conf_test.png}
+    \label{fig:confusion_test}
+  \end{subfigure}
+  \caption{Confusion matrices for test and train data}
+  \label{fig:confusion_matrices}
+\end{figure}
+
+\subsection{ROC and PRC curves}
+
+Figure~\ref{fig:roc_and_prc} shows the ROC and PRC curves of the 4 different models and also provides the area under curve for each.
+
+\begin{figure}[htb]
+  \centering
+  \begin{subfigure}[b]{0.48\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{./images/net(d4_k8)_E50_LR0.0001_B64/roc.png}
+    \caption{ROC for DNN. AUC = 0.7973}
+    \label{fig:dnn_roc}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.48\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{./images/net(d4_k8)_E50_LR0.0001_B64/prc.png}
+    \caption{ROC for DNN. AUC = 0.4030}
+    \label{fig:dnn_orc}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.48\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{./images/reg_roc.png}
+    \caption{ROC for Logistic Regression. AUC = 0.8092}
+    \label{fig:reg_roc}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.48\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{./images/reg_prc.png}
+    \caption{PRC for Logistic Regression. AUC = 0.4358}
+    \label{fig:reg_prc}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.48\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{./images/svm_roc.png}
+    \caption{ROC for Support Vector Machine. AUC = 0.869}
+    \label{fig:svm_roc}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.48\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{./images/svm_prc.png}
+    \caption{PRC for Support Vector Machine. AUC = 0.7156}
+    \label{fig:svm_prc}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.48\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{./images/rfc_roc.png}
+    \caption{ROC for Random Forest Classifier. AUC = 0.8092}
+    \label{fig:rfc_roc}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.48\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{./images/rfc_prc.png}
+    \caption{PRC for Random Forest Classifier. AUC = 0.4358}
+    \label{fig:rfc_prc}
+  \end{subfigure}
+  \caption{ROC and PRC curves}
+  \label{fig:roc_and_prc}
+\end{figure}
+
+Using the F1 score to compare the models, we find, that the Support Vector Machine is performing best ($F1 = 0.8378$). On the second and third place we have the Random Forest Classifier ($F1 = 0.6582$) and the Logistic Regression with $F1 = 0.6582$. They have exactly the same confusion matrix. Sadly the deep neural network performs worst with an F1 score of only $F1 = 0.6329$, though not much worse than the other methods. This is unexpected and is likely due to not enough data that is available in the fraud-class to have really good training.
+
+\section{Other ideas for the unbalanced data problem}
+
+Since out of our 99999 objects in the dataset only 223 represent fraud, we need to deal with the unbalanced data in a smart way.
+We can use under- or oversampling. However there are also other approaches.
+\subsection{Clustering}
+Instead of using undersampling, we could also cluster the majority class objects into $n$ clusters, where $n$ is the number of objects in the minority class and use the resulting cluster centers as "examples" for the majority class in training. This way we have a balanced and relatively small dataset but still capture some information from each object from the original data, since each object has some influence on the resulting cluster centers.
+
+\subsection{Stronger Weights for Minority Class}
+
+since there are so few fraud cases, it is easy for a machine learning algorithm to simple oversee them, and not recognize their influence. To avoid this, we could give a greater punishment to the misclassification of fraud cases and in this way force the model to consider them more strongly. We could do this by having an asymmetric loss function, which is steeper in the area where the fraud class would be misclassified.
 
 
 

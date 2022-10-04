@@ -7,7 +7,12 @@
 \contentsline {subsubsection}{\numberline {1.2.3}Random Forest Classifier}{3}{}%
 \contentsline {section}{\numberline {2}Results}{4}{}%
 \contentsline {subsection}{\numberline {2.1}Confusion Matrices and Classification Metrics}{4}{}%
-\contentsline {subsection}{\numberline {2.2}Constructing a Deep Neural Network}{5}{}%
+\contentsline {subsection}{\numberline {2.2}Constructing the Deep Neural Network}{5}{}%
 \contentsline {subsubsection}{\numberline {2.2.1}Learning Rate}{5}{}%
-\contentsline {subsection}{\numberline {2.3}Summary}{6}{}%
-\contentsline {section}{Bibliography}{7}{}%
+\contentsline {subsection}{\numberline {2.3}Characteristics of the DNN}{7}{}%
+\contentsline {subsection}{\numberline {2.4}ROC and PRC curves}{7}{}%
+\contentsline {section}{\numberline {3}Other ideas for the unbalanced data problem}{8}{}%
+\contentsline {subsection}{\numberline {3.1}Clustering}{8}{}%
+\contentsline {subsection}{\numberline {3.2}Stronger Weights for Minority Class}{9}{}%
+\contentsline {subsection}{\numberline {3.3}Summary}{9}{}%
+\contentsline {section}{Bibliography}{10}{}%

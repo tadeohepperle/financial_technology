@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.8.28) (preloaded format=pdflatex 2022.10.3)  4 OCT 2022 13:16
+This is pdfTeX, Version 3.141592653-2.6-1.40.24 (MiKTeX 22.8.28) (preloaded format=pdflatex 2022.10.3)  4 OCT 2022 18:47
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
@@ -1054,32 +1054,107 @@ File: ./images/rfc_conf1.png Graphic file (type png)
 Package pdftex.def Info: ./images/rfc_conf1.png  used on input line 98.
 (pdftex.def)             Requested size: 110.40253pt x 94.0262pt.
  [4 <./images/reg_conf1.png> <./images/svm_conf1.png> <./images/rfc_conf1.png>]
-Overfull \hbox (30.38121pt too wide) in paragraph at lines 135--137
-[]\T1/lmr/m/n/10.53937 For the learn-ing rate the val-ues $\OML/lmm/m/it/10.53937 LR \OMS/lmsy/m/n/10.53937 2 f\OT1/lmr/m/n/10.53937 0\OML/lmm/m/it/10.53937 :\OT1/lmr/m/n/10.53937 001\OML/lmm/m/it/10.53937 ; \OT1/lmr/m/n/10.53937 0\OML/lmm/m/it/10.53937 :\OT1/lmr/m/n/10.53937 0001\OML/lmm/m/it/10.53937 ; \OT1/lmr/m/n/10.53937 0\OML/lmm/m/it/10.53937 :\OT1/lmr/m/n/10.53937 00003\OML/lmm/m/it/10.53937 ; \OT1/lmr/m/n/10.53937 0\OML/lmm/m/it/10.53937 :\OT1/lmr/m/n/10.53937 00001\OML/lmm/m/it/10.53937 ; \OT1/lmr/m/n/10.53937 0\OML/lmm/m/it/10.53937 :\OT1/lmr/m/n/10.53937 000003\OMS/lmsy/m/n/10.53937 g$\T1/lmr/m/n/10.53937 are
+Overfull \hbox (0.49034pt too wide) in paragraph at lines 135--137
+[]\T1/lmr/m/n/10.53937 For the learn-ing rate the val-ues $\OML/lmm/m/it/10.53937 LR \OMS/lmsy/m/n/10.53937 2 f\OT1/lmr/m/n/10.53937 0\OML/lmm/m/it/10.53937 :\OT1/lmr/m/n/10.53937 01\OML/lmm/m/it/10.53937 ; \OT1/lmr/m/n/10.53937 0\OML/lmm/m/it/10.53937 :\OT1/lmr/m/n/10.53937 001\OML/lmm/m/it/10.53937 ; \OT1/lmr/m/n/10.53937 0\OML/lmm/m/it/10.53937 :\OT1/lmr/m/n/10.53937 0001\OML/lmm/m/it/10.53937 ; \OT1/lmr/m/n/10.53937 0\OML/lmm/m/it/10.53937 :\OT1/lmr/m/n/10.53937 00001\OML/lmm/m/it/10.53937 ; \OT1/lmr/m/n/10.53937 0\OML/lmm/m/it/10.53937 :\OT1/lmr/m/n/10.53937 000001\OMS/lmsy/m/n/10.53937 g$
  []
 
 
-Overfull \hbox (11.3823pt too wide) in paragraph at lines 135--137
-\T1/lmr/m/n/10.53937 con-sid-ered while hold-ing other val-ues con-stant ($\OML/lmm/m/it/10.53937 d \OT1/lmr/m/n/10.53937 = 4\OML/lmm/m/it/10.53937 ; k \OT1/lmr/m/n/10.53937 = 8\OML/lmm/m/it/10.53937 ; BATCHSIZE \OT1/lmr/m/n/10.53937 =
+Overfull \hbox (27.80618pt too wide) in paragraph at lines 135--137
+\T1/lmr/m/n/10.53937 are con-sid-ered while hold-ing other val-ues con-stant ($\OML/lmm/m/it/10.53937 d \OT1/lmr/m/n/10.53937 = 4\OML/lmm/m/it/10.53937 ; k \OT1/lmr/m/n/10.53937 = 8\OML/lmm/m/it/10.53937 ; BATCHSIZE \OT1/lmr/m/n/10.53937 =
  []
 
-[5] [6] (main.bbl
+[5]
+Overfull \hbox (38.3617pt too wide) in paragraph at lines 143--152
+ [][] 
+ []
+
+
+Overfull \hbox (26.94086pt too wide) in paragraph at lines 162--171
+ [][] 
+ []
+
+[6]
+<./images/net(d4_k8)_E50_LR0.0001_B64/accuracy.png, id=47, 406.1574pt x 262.8219pt>
+File: ./images/net(d4_k8)_E50_LR0.0001_B64/accuracy.png Graphic file (type png)
+<use ./images/net(d4_k8)_E50_LR0.0001_B64/accuracy.png>
+Package pdftex.def Info: ./images/net(d4_k8)_E50_LR0.0001_B64/accuracy.png  used on input line 211.
+(pdftex.def)             Requested size: 165.59853pt x 107.15611pt.
+<./images/net(d4_k8)_E50_LR0.0001_B64/loss.png, id=48, 399.894pt x 262.8219pt>
+File: ./images/net(d4_k8)_E50_LR0.0001_B64/loss.png Graphic file (type png)
+<use ./images/net(d4_k8)_E50_LR0.0001_B64/loss.png>
+Package pdftex.def Info: ./images/net(d4_k8)_E50_LR0.0001_B64/loss.png  used on input line 216.
+(pdftex.def)             Requested size: 165.59853pt x 108.83644pt.
+<./images/net(d4_k8)_E50_LR0.0001_B64/conf_train.png, id=49, 326.4195pt x 277.9986pt>
+File: ./images/net(d4_k8)_E50_LR0.0001_B64/conf_train.png Graphic file (type png)
+<use ./images/net(d4_k8)_E50_LR0.0001_B64/conf_train.png>
+Package pdftex.def Info: ./images/net(d4_k8)_E50_LR0.0001_B64/conf_train.png  used on input line 228.
+(pdftex.def)             Requested size: 165.59853pt x 141.03506pt.
+<./images/net(d4_k8)_E50_LR0.0001_B64/conf_test.png, id=50, 326.4195pt x 277.9986pt>
+File: ./images/net(d4_k8)_E50_LR0.0001_B64/conf_test.png Graphic file (type png)
+<use ./images/net(d4_k8)_E50_LR0.0001_B64/conf_test.png>
+Package pdftex.def Info: ./images/net(d4_k8)_E50_LR0.0001_B64/conf_test.png  used on input line 233.
+(pdftex.def)             Requested size: 165.59853pt x 141.03506pt.
+<./images/net(d4_k8)_E50_LR0.0001_B64/roc.png, id=51, 387.1263pt x 262.8219pt>
+File: ./images/net(d4_k8)_E50_LR0.0001_B64/roc.png Graphic file (type png)
+<use ./images/net(d4_k8)_E50_LR0.0001_B64/roc.png>
+Package pdftex.def Info: ./images/net(d4_k8)_E50_LR0.0001_B64/roc.png  used on input line 248.
+(pdftex.def)             Requested size: 165.59853pt x 112.42569pt.
+<./images/net(d4_k8)_E50_LR0.0001_B64/prc.png, id=52, 387.1263pt x 262.8219pt>
+File: ./images/net(d4_k8)_E50_LR0.0001_B64/prc.png Graphic file (type png)
+<use ./images/net(d4_k8)_E50_LR0.0001_B64/prc.png>
+Package pdftex.def Info: ./images/net(d4_k8)_E50_LR0.0001_B64/prc.png  used on input line 254.
+(pdftex.def)             Requested size: 165.59853pt x 112.42569pt.
+<./images/reg_roc.png, id=53, 387.1263pt x 262.8219pt>
+File: ./images/reg_roc.png Graphic file (type png)
+<use ./images/reg_roc.png>
+Package pdftex.def Info: ./images/reg_roc.png  used on input line 260.
+(pdftex.def)             Requested size: 165.59853pt x 112.42569pt.
+<./images/reg_prc.png, id=54, 387.1263pt x 262.8219pt>
+File: ./images/reg_prc.png Graphic file (type png)
+<use ./images/reg_prc.png>
+Package pdftex.def Info: ./images/reg_prc.png  used on input line 266.
+(pdftex.def)             Requested size: 165.59853pt x 112.42569pt.
+<./images/svm_roc.png, id=55, 387.1263pt x 262.8219pt>
+File: ./images/svm_roc.png Graphic file (type png)
+<use ./images/svm_roc.png>
+Package pdftex.def Info: ./images/svm_roc.png  used on input line 272.
+(pdftex.def)             Requested size: 165.59853pt x 112.42569pt.
+<./images/svm_prc.png, id=56, 387.1263pt x 262.8219pt>
+File: ./images/svm_prc.png Graphic file (type png)
+<use ./images/svm_prc.png>
+Package pdftex.def Info: ./images/svm_prc.png  used on input line 278.
+(pdftex.def)             Requested size: 165.59853pt x 112.42569pt.
+<./images/rfc_roc.png, id=57, 387.1263pt x 262.8219pt>
+File: ./images/rfc_roc.png Graphic file (type png)
+<use ./images/rfc_roc.png>
+Package pdftex.def Info: ./images/rfc_roc.png  used on input line 284.
+(pdftex.def)             Requested size: 165.59853pt x 112.42569pt.
+<./images/rfc_prc.png, id=58, 387.1263pt x 262.8219pt>
+File: ./images/rfc_prc.png Graphic file (type png)
+<use ./images/rfc_prc.png>
+Package pdftex.def Info: ./images/rfc_prc.png  used on input line 290.
+(pdftex.def)             Requested size: 165.59853pt x 112.42569pt.
+
+
+LaTeX Warning: Float too large for page by 25.23332pt on input line 296.
+
+[7 <./images/net(d4_k8)_E50_LR0.0001_B64/accuracy.png> <./images/net(d4_k8)_E50_LR0.0001_B64/loss.png>] [8 <./images/net(d4_k8)_E50_LR0.0001_B64/conf_train.png> <./images/net(d4_k8)_E50_LR0.0001_B64/conf_test.png>] [9] (main.bbl
 
 Package natbib Warning: Empty `thebibliography' environment on input line 8.
 
-) [7] (main.aux) ) 
+) [10] [11 <./images/net(d4_k8)_E50_LR0.0001_B64/roc.png> <./images/net(d4_k8)_E50_LR0.0001_B64/prc.png> <./images/reg_roc.png> <./images/reg_prc.png> <./images/svm_roc.png> <./images/svm_prc.png> <./images/rfc_roc.png> <./images/rfc_prc.png>] (main.aux) ) 
 Here is how much of TeX's memory you used:
- 11326 strings out of 475389
- 214454 string characters out of 2777000
- 547146 words of memory out of 3000000
- 32404 multiletter control sequences out of 15000+600000
- 520486 words of font info for 64 fonts, out of 8000000 for 9000
+ 11445 strings out of 475389
+ 217968 string characters out of 2777000
+ 557594 words of memory out of 3000000
+ 32509 multiletter control sequences out of 15000+600000
+ 523483 words of font info for 65 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 84i,8n,90p,1418b,437s stack positions out of 10000i,1000n,20000p,200000b,80000s
-{C:/Users/tadeo/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Users/tadeo/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Users/tadeo/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}{C:/Users/tadeo/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}<C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/Users/tadeo/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/tadeo/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/tadeo/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmcsc10.pfb><C:/Users/tadeo/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/tadeo/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi7.pfb><C:/Users/tadeo/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/tadeo/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/tadeo/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr17.pfb><C:/Users/tadeo/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr7.pfb><C:/Users/tadeo/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmro10.pfb><C:/Users/tadeo/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb>
-Output written on main.pdf (8 pages, 399942 bytes).
+ 84i,8n,90p,1418b,546s stack positions out of 10000i,1000n,20000p,200000b,80000s
+{C:/Users/tadeo/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-ec.enc}{C:/Users/tadeo/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathit.enc}{C:/Users/tadeo/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-mathsy.enc}{C:/Users/tadeo/AppData/Local/Programs/MiKTeX/fonts/enc/dvips/lm/lm-rm.enc}<C:/WINDOWS/Fonts/simsun.ttc><C:/WINDOWS/Fonts/simsun.ttc><C:/Users/tadeo/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx10.pfb><C:/Users/tadeo/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmbx12.pfb><C:/Users/tadeo/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmcsc10.pfb><C:/Users/tadeo/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi10.pfb><C:/Users/tadeo/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmmi7.pfb><C:/Users/tadeo/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr10.pfb><C:/Users/tadeo/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr12.pfb><C:/Users/tadeo/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr17.pfb><C:/Users/tadeo/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr7.pfb><C:/Users/tadeo/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmr9.pfb><C:/Users/tadeo/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmro10.pfb><C:/Users/tadeo/AppData/Local/Programs/MiKTeX/fonts/type1/public/lm/lmsy10.pfb>
+Output written on main.pdf (12 pages, 1013820 bytes).
 PDF statistics:
- 108 PDF objects out of 1000 (max. 8388607)
+ 149 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 24 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 84 words of extra memory for PDF output out of 10000 (max. 10000000)
 
