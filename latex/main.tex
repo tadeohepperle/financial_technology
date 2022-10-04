@@ -79,7 +79,7 @@ With an 80-20 train-test split of the data, 3 models were trained: Logistic Regr
 
 \subsection{Confusion Matrices and Classification Metrics}
 As Figure~\ref{fig:confusion1} shows, all models are pretty good at classifying the non-fraud cases as non-fraud, which is non-surprising since these comprise the overwhelming majority of the training data.
-Taking a look at the classification metrics in Table~\ref{tab:metrics1} we can see that the SVM is overall performing best, also with highest accuracy. To judge the performance, I would use the F1-score as it provides a good middle ground between precision and recall, in both of which high values are desired. I think the F1 metric is most suitable on this dataset because it is not so much affected by the very imbalanced distribution of fraud vs. non-fraud cases in the data. Surprisingly Logistic Regression and Random Forest have the same performance in our case.
+Taking a look at the classification metrics in Table~\ref{tab:metrics1} we can see that the SVM is overall performing best, also with highest accuracy. To judge the performance, I would use the F1-score as it provides a good middle ground between precision and recall, in both of which high values are desired. I think the F1 metric is most suitable on this dataset because it is not affected by the very imbalanced distribution of fraud vs. non-fraud cases in the data. The amount of True Negatives is very high in all classifiers used and the F1 score is not influenced by the amount of true negatives at all, which is a good thing in our case. Surprisingly Logistic Regression and Random Forest have the same performance.
 
 \begin{figure}[htb]
   \centering
@@ -296,6 +296,85 @@ Figure~\ref{fig:roc_and_prc} shows the ROC and PRC curves of the 4 different mod
 \end{figure}
 
 Using the F1 score to compare the models, we find, that the Support Vector Machine is performing best ($F1 = 0.8378$). On the second and third place we have the Random Forest Classifier ($F1 = 0.6582$) and the Logistic Regression with $F1 = 0.6582$. They have exactly the same confusion matrix. Sadly the deep neural network performs worst with an F1 score of only $F1 = 0.6329$, though not much worse than the other methods. This is unexpected and is likely due to not enough data that is available in the fraud-class to have really good training.
+
+\subsection{Performing Undersampling}
+
+I used undersampling to bring the number of non-fraud cases in the train data down to the number of fraud cases. The train set contained 181 fraud cases, so the undersampled train data set now contains, 362 objects in total, half of which are fraud. SVM, Random Forst Classifier and Logistic Regression were trained again on this data. Also the deep neural network was trained on the undersampled data, though with a few modifications to the model proposed in the preceding section.
+Because we now have much less training examples we need to bump the number of epochs (from 50 to 2000) to get a similar amount of training work done. Also the batch size was chosen to be slightly lower (32 instead of 64). Still the network has 4 hidden layers with 8 neurons each. The learning rate also stayed 0.0001.
+
+Figure~\ref{fig:u_comp} aims to compare the test-set performance of the 4 models that used undersampling when training.
+
+\begin{figure}[htb]
+  \centering
+  \begin{subfigure}[b]{0.48\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{./images/undersampled_net(d4_k8)_E2000_LR0.0001_B32/conf_test.png}
+    \caption{Deep Neural Network}
+    \label{fig:u_1}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.48\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{./images/reg_conf1_u.png}
+    \caption{Logistic Regression}
+    \label{fig:u2}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.48\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{./images/svm_conf1_u.png}
+    \caption{Support Vector Machine}
+    \label{fig:u3}
+  \end{subfigure}
+  \begin{subfigure}[b]{0.48\textwidth}
+    \centering
+    \includegraphics[width=\textwidth]{./images/rfc_conf1_u.png}
+    \caption{Random Forest Classifier}
+    \label{fig:u4}
+  \end{subfigure}
+  \caption{Confusion Matrices after Undersampling}
+  \label{fig:u_comp}
+\end{figure}
+
+At first we can see that a lot more items get misclassified than without undersampling. This can be partly because the train set was massively reduced in size and does not contain so much information to learn from anymore. Especially there are much more False-Positives now. Let's take a look at the actual performance values in Table~\ref{tab:undersampling}
+
+
+
+\begin{table}[ht]
+  \centering
+  \caption{Performance of the strongest model}
+  \label{tab:chars}
+  \begin{tabular}{c|cccc}
+    characteristic           & Accuracy & Precision   & Recall      & F1          \\
+    \hline
+    Deep Neural Network      & 0.9364   & 0.9915      & 0.1768      & 0.8333      \\
+    Logistic Regression      & 0.9765   & 0.0737      & 0.8810      & 0.1360      \\
+    Support Vector Machine   & 0.98175  & 0.091139241 & 0.857142857 & 0.164759725 \\
+    Random Forest Classifier & 0.9977   & 0.473684211 & 0.857142857 & 0.610169492 \\
+  \end{tabular}
+\end{table}
+Logistic Regression:
+Accuracy: 0.9765
+Precision: 0.073705179
+Recall: 0.880952381
+F1: 0.136029412
+
+Support Vector Machine:
+Accuracy: 0.98175
+Precision: 0.091139241
+Recall: 0.857142857
+F1: 0.164759725
+
+Random Forest Classifier:
+Accuracy: 0.9977
+Precision: 0.473684211
+Recall: 0.857142857
+F1: 0.610169492
+
+
+
+
+
+
+
 
 \section{Other ideas for the unbalanced data problem}
 
